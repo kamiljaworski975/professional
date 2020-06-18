@@ -43,6 +43,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes spiral {
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  14.25% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 50% 75%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  28.5% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 50%, 50% 50%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  42.75% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 25% 25%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  57% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  71.25% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 100%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 25%, 0% 25%); }
+  85.5% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 0% 25%); }
+  100% {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%); } }
+
 *,
 *::after,
 *::before {
@@ -303,9 +321,12 @@ body {
   background-image: url(../../img/bath-imgMini.jpeg);
   background-position: center;
   background-size: cover; }
+  .section-work--container:hover {
+    animation: 3s spiral; }
   .section-work--container:hover .section-work--box {
     height: 100%;
-    opacity: 1; }
+    opacity: 1;
+    animation: 3s spiral reverse 3s; }
   .section-work--container:hover .section-work--box h3, .section-work--container .section-work--box i {
     opacity: 1; }
 
@@ -434,9 +455,8 @@ body {
   .section-values .icon-box {
     height: 13.4rem;
     width: 14.4rem;
-    transition: all 1s linear; }
+    transition: all .5s easy; }
     .section-values .icon-box:hover {
-      transform: rotateY(180deg) rotateZ(360deg);
-      opacity: 1; }
+      transform: translateY(-1rem); }
     .section-values .icon-box--round {
       font-size: 6rem; }

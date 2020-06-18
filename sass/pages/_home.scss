@@ -56,10 +56,10 @@
     & .icon-box {
         height: 13.4rem;
         width: 14.4rem;
-        transition: all 1s linear;
+        transition: all .5s easy;
+       
         &:hover {
-            transform: rotateY(180deg) rotateZ(360deg);
-            opacity: 1;
+            transform: translateY(-1rem);
         }
         &--round {
             font-size: 6rem;
