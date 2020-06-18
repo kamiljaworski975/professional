@@ -1,0 +1,11 @@
+.values--box {
+     & h3::after {
+         content: "";
+         display: block;
+         width: 10%;
+         height: 3px;
+         background-color: orange;
+         margin: 1rem auto 2rem;
+     }
+}
+

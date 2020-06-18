@@ -1,4 +1,48 @@
 .section-work--reuseable {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10rem 0 0;
+}
+.section-work{
+    &--box{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 0; 
+        opacity: 0;
+        width: 100%;
+        background-color: $color-secondary-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-50%);
+        transition: all .6s ease;
+        & h3,i {
+            opacity: 0;
+            transition: all .6s ease;
+        }
+    }
+    &--container {
+        height: 35rem;
+        position: relative;
+        background: blue;
+        background-image: url(../../img/bath-imgMini.jpeg);
+        background-position: center;
+        background-size: cover;
+        &:hover .section-work--box {
+            height: 100%;
+            opacity: 1;
+        }
+        &:hover .section-work--box h3, .section-work--box i {
+            opacity: 1;
+        }
+    }
+}
 
+.work--box-icon {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: $color-white;
+    cursor: pointer;
 }

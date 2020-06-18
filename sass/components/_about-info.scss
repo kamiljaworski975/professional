@@ -11,10 +11,9 @@
     }
     &-back {
         position: absolute;
-        transform: translateY(100%);
         padding: 5rem 1.5rem;
         visibility: hidden;
-        top: 0;
+        top: 100%;
         left: 0;
         height: 100%;
         width: 100%;
@@ -31,7 +30,7 @@
         visibility: hidden;
     }
     &:hover &-back{
-        transform: translateY(0);
+        top: 0;
         visibility: visible;
     }  
 }

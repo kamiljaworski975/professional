@@ -1,9 +1,9 @@
 .icon-box {
     position: relative;
     height: 64px;
-    width: 64px;
-    border: 1px solid;
-    border-radius: 50%;
+    width: 74px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
     background-clip: padding-box;
     margin: 0 auto;
     background-color: $color-grey-dark-3;
@@ -16,3 +16,5 @@
         color: $color-secondary-light;
     }
 }
+
+

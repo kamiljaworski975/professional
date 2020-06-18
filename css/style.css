@@ -122,6 +122,9 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.heading-white {
+  color: #fff; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -156,6 +159,17 @@ body {
   background-color: #ffb900;
   height: 1px;
   margin: 1rem auto 0; }
+
+.u-flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.u-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -215,9 +229,9 @@ body {
 .icon-box {
   position: relative;
   height: 64px;
-  width: 64px;
-  border: 1px solid;
-  border-radius: 50%;
+  width: 74px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   background-clip: padding-box;
   margin: 0 auto;
   background-color: #333; }
@@ -241,10 +255,9 @@ body {
     transition: all .6s linear; }
   .about--info-back {
     position: absolute;
-    transform: translateY(100%);
     padding: 5rem 1.5rem;
     visibility: hidden;
-    top: 0;
+    top: 100%;
     left: 0;
     height: 100%;
     width: 100%;
@@ -258,11 +271,58 @@ body {
     transform: translateY(-100%);
     visibility: hidden; }
   .about--info:hover .about--info-back {
-    transform: translateY(0);
+    top: 0;
     visibility: visible; }
 
 .section-work--reuseable {
-  height: 100vh; }
+  min-height: 100vh;
+  padding: 10rem 0 0; }
+
+.section-work--box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0;
+  opacity: 0;
+  width: 100%;
+  background-color: #ffb900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-50%);
+  transition: all .6s ease; }
+  .section-work--box h3, .section-work--box i {
+    opacity: 0;
+    transition: all .6s ease; }
+
+.section-work--container {
+  height: 35rem;
+  position: relative;
+  background: blue;
+  background-image: url(../../img/bath-imgMini.jpeg);
+  background-position: center;
+  background-size: cover; }
+  .section-work--container:hover .section-work--box {
+    height: 100%;
+    opacity: 1; }
+  .section-work--container:hover .section-work--box h3, .section-work--container .section-work--box i {
+    opacity: 1; }
+
+.work--box-icon {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  cursor: pointer; }
+
+.values--box h3::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: orange;
+  margin: 1rem auto 2rem; }
 
 .row {
   max-width: 114rem;
@@ -306,7 +366,11 @@ body {
 
 .text-row {
   max-width: 80rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   @media only screen and (max-width: 56.25em) {
     .text-row {
       max-width: 50rem;
@@ -336,16 +400,43 @@ body {
     margin: 0 auto; }
 
 .section-stats {
-  height: 100vh;
-  background-color: red;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/renovation-tools.jpeg");
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/renovation-tools.jpeg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
   position: relative;
-  margin-top: 15rem;
+  padding-top: 10rem;
   -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
   clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%); }
   @media only screen and (max-width: 56.25em) {
     .section-stats {
       background: red; } }
+  .section-stats--icon {
+    font-size: 10rem;
+    color: #ffb900; }
+  .section-stats--count {
+    display: block;
+    font-size: 7rem;
+    color: #ffb900;
+    margin-top: -2rem; }
+  .section-stats--sub {
+    display: inline-block;
+    transform: translateY(0.8rem); }
+
+.section-values {
+  padding: 7rem 0;
+  background-color: #f7f7f7;
+  height: 150vh; }
+  .section-values .icon-box {
+    height: 13.4rem;
+    width: 14.4rem;
+    transition: all 1s linear; }
+    .section-values .icon-box:hover {
+      transform: rotateY(180deg) rotateZ(360deg);
+      opacity: 1; }
+    .section-values .icon-box--round {
+      font-size: 6rem; }

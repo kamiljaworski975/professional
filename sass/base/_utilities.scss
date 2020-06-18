@@ -32,3 +32,16 @@
         margin: 1rem auto 0;
     }
 }
+
+.u-flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.u-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

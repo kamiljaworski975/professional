@@ -9,23 +9,60 @@
 
 
 .section-stats{
-        height: 100vh;
-        background-color: red;
-        background-image: linear-gradient(
-            to right bottom,
-            rgba(0,0,0 , 0.4),
-            rgba(0,0,0, 0.4)),
-        url("../../img/renovation-tools.jpeg");
-        background-size: cover;
-        background-position: top;
-        background-attachment: fixed;
-        position: relative;
-        margin-top: 15rem;
-        -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%);
-        
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0,0,0 , 0.6),
+        rgba(0,0,0, 0.6)),
+    url("../../img/renovation-tools.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 10rem;
+    -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%);
     
-        @include respond(tab-port) {
-            background: red;
+
+    @include respond(tab-port) {
+        background: red;
+    }
+
+    &--icon {
+        font-size: 10rem;
+        color: $color-secondary-light;
+    }
+
+    &--count {
+        display: block;
+        font-size: 7rem;
+        color: $color-secondary-light;
+        margin-top: -2rem;
+    }
+    &--sub {
+        display: inline-block;
+        transform: translateY(.8rem);
+    }
+}
+
+
+.section-values {
+    padding: 7rem 0;
+    background-color: $color-grey-light-1;
+    height: 150vh;
+    & .icon-box {
+        height: 13.4rem;
+        width: 14.4rem;
+        transition: all 1s linear;
+        &:hover {
+            transform: rotateY(180deg) rotateZ(360deg);
+            opacity: 1;
         }
+        &--round {
+            font-size: 6rem;
+        }
+    }
 }
