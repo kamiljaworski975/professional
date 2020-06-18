@@ -29,14 +29,10 @@
         background-image: url(../../img/bath-imgMini.jpeg);
         background-position: center;
         background-size: cover;
-        
-        &:hover {
-            animation: 3s spiral;
-        }
+    
         &:hover .section-work--box {
             height: 100%;
             opacity: 1;
-            animation: 3s spiral reverse 3s;
         }
         &:hover .section-work--box h3, .section-work--box i {
             opacity: 1;

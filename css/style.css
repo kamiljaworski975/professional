@@ -321,12 +321,9 @@ body {
   background-image: url(../../img/bath-imgMini.jpeg);
   background-position: center;
   background-size: cover; }
-  .section-work--container:hover {
-    animation: 3s spiral; }
   .section-work--container:hover .section-work--box {
     height: 100%;
-    opacity: 1;
-    animation: 3s spiral reverse 3s; }
+    opacity: 1; }
   .section-work--container:hover .section-work--box h3, .section-work--container .section-work--box i {
     opacity: 1; }
 
