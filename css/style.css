@@ -66,7 +66,7 @@ body {
   box-sizing: border-box; }
 
 ::selection {
-  background-color: #55c57a;
+  background-color: #333;
   color: #fff; }
 
 body {
@@ -100,24 +100,16 @@ body {
         letter-spacing: .5rem; } }
 
 .heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #333;
+  letter-spacing: .2rem; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
-  .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -125,7 +117,8 @@ body {
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.7rem;
+  font-weight: 500; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -155,6 +148,14 @@ body {
 
 .u-margin-right-big {
   margin-right: 2rem !important; }
+
+.u-heading-line ::after {
+  content: "";
+  display: block;
+  width: 30rem;
+  background-color: #ffb900;
+  height: 1px;
+  margin: 1rem auto 0; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -194,24 +195,74 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
-.btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
-  color: #55c57a;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #55c57a;
-  padding: 3px;
+.btn-text {
+  position: absolute;
+  bottom: -3rem; }
+  .btn-text:link, .btn-text:visited {
+    font-size: 1.6rem;
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: .7rem 3rem;
+    transition: all .2s; }
+  .btn-text:hover, .btn-text:active {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333; }
+
+.icon-box {
+  position: relative;
+  height: 64px;
+  width: 64px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-clip: padding-box;
+  margin: 0 auto;
+  background-color: #333; }
+  .icon-box--round {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #ffb900; }
+
+.about--info {
+  position: relative;
+  background-color: #eee;
+  box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  cursor: pointer;
   transition: all .2s; }
+  .about--info-front {
+    padding: 5rem 1.5rem;
+    transition: all .6s linear; }
+  .about--info-back {
+    position: absolute;
+    transform: translateY(100%);
+    padding: 5rem 1.5rem;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .6s linear;
+    background: #ffb900;
+    color: #fff; }
+  .about--info:hover {
+    transform: translateY(-1rem);
+    box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.25); }
+  .about--info:hover .about--info-front {
+    transform: translateY(-100%);
+    visibility: hidden; }
+  .about--info:hover .about--info-back {
+    transform: translateY(0);
+    visibility: visible; }
 
-.btn-text:hover {
-  background-color: #55c57a;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
-
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
+.section-work--reuseable {
+  height: 100vh; }
 
 .row {
   max-width: 114rem;
@@ -253,6 +304,14 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
+.text-row {
+  max-width: 80rem;
+  margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .text-row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
@@ -268,3 +327,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7; }
+  .section-about--box {
+    background-color: #ffb900;
+    padding: 5rem 0 1rem;
+    margin: 0 auto; }
+
+.section-stats {
+  height: 100vh;
+  background-color: red;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/renovation-tools.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 15rem;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
+  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%); }
+  @media only screen and (max-width: 56.25em) {
+    .section-stats {
+      background: red; } }

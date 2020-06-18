@@ -37,15 +37,10 @@ body {
 }
 
 .heading-secondary {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: $color-grey-dark-3;
     letter-spacing: .2rem;
-    transition: all .2s;
 
     @include respond(tab-port) {
         font-size: 3rem;
@@ -53,11 +48,6 @@ body {
 
     @include respond(phone) {
         font-size: 2.5rem;
-    }
-
-    &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
 }
 
@@ -68,7 +58,8 @@ body {
 }
 
 .paragraph {
-    font-size: $default-font-size;
+    font-size: 1.7rem;
+    font-weight: 500;
 
     &:not(:last-child) {
         margin-bottom: 3rem;
