@@ -469,5 +469,6 @@ body {
   min-height: 100vh;
   background-color: #f7f7f7;
   position: relative;
-  padding-top: 10rem;
+  padding-top: 25rem;
+  padding-bottom: 10rem;
   clip-path: polygon(50% 20%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0); }
