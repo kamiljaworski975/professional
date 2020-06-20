@@ -318,7 +318,7 @@ body {
   height: 35rem;
   position: relative;
   background: blue;
-  background-image: url(../../img/bath-imgMini.jpeg);
+  background-image: url(../img/bath-imgMini.jpeg);
   background-position: center;
   background-size: cover; }
   .section-work--container:hover .section-work--box {
@@ -422,7 +422,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/renovation-tools.jpeg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/renovation-tools.jpeg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
