@@ -21,4 +21,11 @@ clip-path: polygon(50% 20%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    & img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 }
