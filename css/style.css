@@ -108,14 +108,14 @@ body {
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-weight: 700;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
-        font-family: 5rem; } }
+        font-size: 4rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -123,7 +123,7 @@ body {
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   font-size: 3.2rem;
@@ -305,7 +305,7 @@ body {
   padding: 10rem 0 0; }
   @media only screen and (max-width: 75em) {
     .section-work--reuseable {
-      padding: 0 2rem; } }
+      padding: 10 2rem 0; } }
 
 .section-work--box {
   position: absolute;
@@ -512,6 +512,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
+  @media only screen and (max-width: 75em) {
+    .row {
+      padding: 0 2rem; } }
   @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem;
@@ -571,6 +574,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media only screen and (max-width: 75em) {
+      .header__text-box {
+        width: 100%; } }
+  @media only screen and (max-width: 37.5em) {
+    .header .btn,
+    .header .btn:link,
+    .header .btn:visited {
+      padding: 1rem 2rem;
+      display: block;
+      width: 50%;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .header .btn--grey {
+      margin-right: auto !important;
+      margin-bottom: 2rem !important; } }
 
 .section-about {
   min-height: 170vh;
@@ -579,9 +597,6 @@ body {
     background-color: #ffb900;
     padding: 5rem 0 1rem;
     margin: 0 auto; }
-  @media only screen and (max-width: 75em) {
-    .section-about {
-      padding: 0 2rem; } }
 
 .section-stats {
   min-height: 120vh;
@@ -601,11 +616,17 @@ body {
   .section-stats--icon {
     font-size: 10rem;
     color: #ffb900; }
+    @media only screen and (max-width: 56.25em) {
+      .section-stats--icon {
+        font-size: 6rem; } }
   .section-stats--count {
     display: block;
     font-size: 7rem;
     color: #ffb900;
     margin-top: -2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section-stats--count {
+        font-size: 5rem; } }
   .section-stats--sub {
     display: inline-block;
     transform: translateY(0.8rem); }
@@ -622,16 +643,10 @@ body {
       transform: translateY(-1rem); }
     .section-values .icon-box--round {
       font-size: 6rem; }
-  @media only screen and (max-width: 75em) {
-    .section-values {
-      padding: 0 2rem; } }
 
 .section-article {
   padding: 10rem 0;
   min-height: 100vh; }
-  @media only screen and (max-width: 75em) {
-    .section-article {
-      padding: 0 2rem; } }
 
 .section-bottom {
   height: 60vh;
@@ -642,6 +657,3 @@ body {
     display: block;
     color: #fff;
     font-size: 1.6rem; }
-  @media only screen and (max-width: 75em) {
-    .section-bottom {
-      padding: 0 2rem; } }
