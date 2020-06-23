@@ -493,6 +493,13 @@ body {
     align-items: center;
     font-size: 1.4rem;
     font-weight: 300; }
+    @media only screen and (max-width: 37.5em) {
+      .footer-bot {
+        flex-direction: column;
+        justify-content: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer-bot div:first-child {
+        margin-bottom: 1rem; } }
     .footer-bot div a {
       text-decoration: none;
       color: inherit;

@@ -38,7 +38,17 @@
         align-items: center;
         font-size: 1.4rem;
         font-weight: 300;
+
+        @include respond(phone) {
+            flex-direction: column;
+            justify-content: center;
+        }
         
+        & div:first-child {
+            @include respond(phone) {
+                margin-bottom: 1rem;
+            }
+        }
         & div a {
             text-decoration: none;
             color: inherit;
