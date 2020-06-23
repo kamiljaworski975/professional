@@ -1,5 +1,4 @@
-// Elements
-const arrow = document.querySelector(".arrow-top"); 
+import {arrowTop} from "./scripts/arrowTop";
 
 // Functions
 setTimeout(clientCarousel(), 2000)
@@ -43,16 +42,9 @@ function clientCarousel() {
  
 }
 
-function arrowTop() { 
-    window.addEventListener("scroll", (el) => {
-        if(window.scrollY > 300) {
-            arrow.style.opacity = "1"
-        } else {
-            arrow.style.opacity = "0"
-        }
-    })
-    arrow.addEventListener("click", () => {
-        window.scrollTo(0,0)
-    })
-}
+
+
+
+
+
 
