@@ -23,7 +23,25 @@
   height: 100%;
 }
 
-.person{
+.person-text{
   background-color: $color-white;
-  
+  padding: 40px;
+  font-size: 2rem;
+    & span{
+      display: block;
+    }
+    .person-icons{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      
+    }
+}
+
+.hat-img{
+  object-fit: cover;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
