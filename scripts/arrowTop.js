@@ -1,4 +1,4 @@
-export const arrowTop = () => { 
+function arrowTop() { 
     const arrow = document.querySelector(".arrow-top"); 
     window.addEventListener("scroll", (el) => {
         if(window.scrollY > 300) {
@@ -11,3 +11,5 @@ export const arrowTop = () => {
         window.scrollTo(0,0)
     })
 }
+
+arrowTop();

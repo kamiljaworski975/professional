@@ -1,9 +1,6 @@
-import {arrowTop} from "./scripts/arrowTop";
 
 // Functions
 setTimeout(clientCarousel(), 2000)
-arrowTop();
-
 
 
 function clientCarousel() {
@@ -31,7 +28,6 @@ function clientCarousel() {
 
     clientCarousel.addEventListener("mouseover", () => {
         clearInterval(myInt)
-        console.log("dziala")
     })
     clientCarousel.addEventListener("mouseout", () => {
         myInt = setInterval(() => boxShow(isShow), 10000)
@@ -41,9 +37,6 @@ function clientCarousel() {
     clientInputs[1].addEventListener("click", () => boxShow(isShow));
  
 }
-
-
-
 
 
 
