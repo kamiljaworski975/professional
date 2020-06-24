@@ -1,0 +1,47 @@
+.section-services {
+    min-height: 170vh;
+    background-color: $color-grey-light-1;
+    &--box {
+        background-color: $color-secondary-light;
+        padding: 5rem 0 1rem;
+        margin: 0 auto;
+    }
+
+    &--left {
+        height: 50rem;
+        & ul {
+            list-style: none;
+            & li {
+                color: $color-grey-dark-3;
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 2rem 3rem;
+                background-color: $color-grey-light-2;
+                margin-bottom: 1rem;
+                transition: all .4s;
+                cursor: pointer;
+                &:hover {
+                    background-color: $color-secondary-light;
+                }
+            }
+        }
+    }
+
+    &--right .service-description {
+        &--img {
+            height: 40rem;
+            width: 100%;
+            & img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.active { 
+    background-color: $color-secondary-light !important;
+}

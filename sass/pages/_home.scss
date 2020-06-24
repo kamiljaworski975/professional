@@ -1,4 +1,5 @@
 .section-about {
+    min-height: 170vh;
     background-color: $color-grey-light-1;
     &--box {
         background-color: $color-secondary-light;
@@ -9,10 +10,7 @@
 
 
 .section-stats{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 120vh;
     background-image: linear-gradient(
         to right bottom,
         rgba(0,0,0 , 0.6),
@@ -22,9 +20,12 @@
     background-position: top;
     background-attachment: fixed;
     position: relative;
+    margin-top: -35rem;
+    width: 100%;
     padding-top: 10rem;
     -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
     clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%);
+
     
 
     @include respond(tab-port) {
@@ -34,6 +35,10 @@
     &--icon {
         font-size: 10rem;
         color: $color-secondary-light;
+
+        @include respond(tab-port) {
+            font-size: 6rem;
+        }
     }
 
     &--count {
@@ -41,6 +46,9 @@
         font-size: 7rem;
         color: $color-secondary-light;
         margin-top: -2rem;
+        @include respond(tab-port) {
+            font-size: 5rem;
+        }
     }
     &--sub {
         display: inline-block;
@@ -51,8 +59,8 @@
 
 .section-values {
     padding: 7rem 0;
-    background-color: $color-grey-light-1;
     height: 150vh;
+    background-color: $color-grey-light-1;
     & .icon-box {
         height: 13.4rem;
         width: 14.4rem;
@@ -64,5 +72,27 @@
         &--round {
             font-size: 6rem;
         }
+    }
+}
+
+.section-article {
+    padding: 10rem 0;
+    min-height: 100vh;
+}
+
+.section-bottom {
+    height: 60vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0,0,0 , 0.6),
+        rgba(0,0,0, 0.6)), 
+        url("../../img/section-bottom.jpeg");
+        background-position: center;
+        background-size: cover;
+        
+    & .col-1-of-3 span {
+        display: block;
+        color: $color-white;
+        font-size: 1.6rem;
     }
 }
