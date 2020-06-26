@@ -817,3 +817,6 @@ a {
       transition: all .4s; }
       .section-blog--author a:hover, .section-blog--author a:active {
         color: #ffb900; }
+
+.section-contact {
+  height: 100vh; }
