@@ -1,0 +1,57 @@
+.section__workpage{
+    padding: 10rem 0;
+    & h2::after{
+        content: "";
+        display: block;
+        background-color: $color-secondary-light;
+        height: 2px;
+        width: 5rem;
+    }
+}
+
+.section__workpage-articles--small{
+    & ul{
+        list-style: none;
+        & span{
+            color: $color-grey-dark-3;
+            display: block;
+            font-size: 2rem;
+        }
+        & li{
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.section__workpage-gallery{
+    margin-top: 10rem;
+     & .row{
+         margin-bottom: 2rem;
+     }
+
+    &--large img{
+        object-fit: cover;
+        width:100%;
+        height: 77.3vh;
+        @include respond(tab-port){
+            height: 37vh;
+        }
+    }
+
+    & .col-2-of-5{
+        @include respond(tab-port){
+            margin-bottom: 0 !important;
+        }
+    }
+    &--small img{
+        object-fit: cover;
+        width:100%;
+        height: 37vh;
+        margin-bottom: 2rem;
+        @include respond(tab-port){
+            margin-bottom: 6rem;
+        }
+    }
+}
+
