@@ -15,7 +15,7 @@ function checkMenu() {
         return null
     } else if (x.indexOf('/work') > 0) {
         return null
-    } else if (x == "http://127.0.0.1:8080/index.html" || x == "http://127.0.0.1:8080/" ) {
+    } else if (x == "http://127.0.0.1:8080/" ) {
         menuItem[0].classList.add("current-menu")
     } else {
         return null

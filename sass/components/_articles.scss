@@ -26,6 +26,10 @@
         & h3 a {
             text-decoration: none;
             color: $color-grey-dark;
+            transition: .4s;
+            &:hover {
+                color: $color-secondary-light;
+            }
         }
         & span {
             font-size: 1.6rem;
