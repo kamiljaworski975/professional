@@ -1,15 +1,11 @@
 .footer {
-    min-height: 75vh;
+    padding: 5rem 0 0;
     background-color: $color-footer;
     border-top: 12px solid $color-grey-dark-3;
     position: relative;
     & h3 {
         color: $color-secondary-light;
     }
-    @include respond (tab-port) {
-        height: 135vh;
-    }
-    
     &-list{
         list-style: none;
         & li {
@@ -26,14 +22,11 @@
         }
     }
     &-bot {
-        position: absolute;
-        bottom: 0;
-        left: 0;
         width: 100%;
         min-height: 10vh;
         background-color: $color-footer-dark;
         display: flex;
-        padding: 0 7rem;
+        padding: 1rem 7rem;
         justify-content: space-between;
         align-items: center;
         font-size: 1.4rem;

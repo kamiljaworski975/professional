@@ -60,7 +60,7 @@ body {
 .heading-quaternary {
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .paragraph {
@@ -74,4 +74,8 @@ body {
 
 .heading-white {
     color: $color-white;
+}
+
+a {
+    text-decoration: none;
 }
