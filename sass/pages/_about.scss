@@ -15,11 +15,14 @@
   padding-bottom: 10rem;
   -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
   clip-path: polygon(50% 20%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  @include respond(tab-port){
+    clip-path: polygon(50% 7%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  }
 }
 
 .meetus-img img {
   object-fit: cover;
-  width: 100%;
+  width:100%;
   height: 100%;
 }
 
@@ -42,6 +45,6 @@
 .hat-img{
   object-fit: cover;
   overflow: hidden;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
 }
