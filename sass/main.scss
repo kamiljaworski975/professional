@@ -19,6 +19,7 @@
 @import "components/arrow-top";
 @import "components/map";
 @import "components/form";
+@import "components/single-article";
 
 // Layout
 @import "layout/footer";
@@ -29,4 +30,5 @@
 
 // Pages
 @import "pages/home";
-@import "pages/services"
+@import "pages/services";
+@import "pages/articles";
