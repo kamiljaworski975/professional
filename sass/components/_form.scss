@@ -1,3 +1,122 @@
 .section-form {
-    height: 100vh;
-}
+    background-image: url(../../img/renovation-tools.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10rem 2rem;
+  
+    &--box {
+        position: relative;
+        height: 80%;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+        width: 60%;
+        @include respond(tab-port) {
+            width: 80%;
+            }
+        @include respond(phone) {
+            width: 100%;
+          }
+        & form {
+            padding: 5rem;
+            & input {
+            height: 50px;
+            width: 100%;
+            border: solid 1px rgb(221, 221, 221);
+            border-radius: 0px;
+            margin: 2rem 0;
+            }
+    
+            & label {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            color: $color-grey-dark-3;
+            }
+        }
+    }
+  
+    &--text {
+        &--header {
+            padding: 2.5rem 0;
+            display: block;
+            background-color: $color-secondary-light;
+            width: 100%;
+        }
+        & p {
+        background-color: rgba(255, 255, 255, 0);
+            padding: 3rem;
+        }
+        }
+  }
+  
+  .row-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 2rem;
+    
+        & :first-child {
+        margin-right: 2rem;
+        @include respond(tab-port) {
+            margin: 0;
+        }
+        }
+        @include respond(tab-port) {
+        flex-wrap: wrap;
+        margin: 0;
+        }
+    }
+  
+  .column-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        @include respond(tab-port) {
+        margin: 0;
+        }
+  }
+  .column-wrapper-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-bottom: 2rem;
+        & label {
+            align-self: flex-start;
+        }
+        & .subject {
+            width: 100%;
+        }
+        & .how-to-help {
+            height: 150px;
+            width: 100%;
+            border: solid 1px rgb(221, 221, 221);
+            border-radius: 0px;
+            margin-top: 2rem;
+        }
+        & :nth-child(3){
+            margin-top: 2rem;
+        }
+        .submit-btn {
+            height: 50px;
+            margin-top: 2rem;
+            width: 25%;
+            border:none;
+        
+            background-color: $color-secondary-light;
+            color: $color-grey-dark-3;
+            &:hover {
+                background-color: $color-grey-dark-3;
+                color: $color-white;
+            }
+            @include respond(tab-port) {
+                width: 60%;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+    }
+  }

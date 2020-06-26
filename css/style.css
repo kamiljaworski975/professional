@@ -470,7 +470,104 @@ a {
   background: red; }
 
 .section-form {
-  height: 100vh; }
+  background-image: url(../../img/renovation-tools.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10rem 2rem; }
+  .section-form--box {
+    position: relative;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    width: 60%; }
+    @media only screen and (max-width: 56.25em) {
+      .section-form--box {
+        width: 80%; } }
+    @media only screen and (max-width: 37.5em) {
+      .section-form--box {
+        width: 100%; } }
+    .section-form--box form {
+      padding: 5rem; }
+      .section-form--box form input {
+        height: 50px;
+        width: 100%;
+        border: solid 1px #dddddd;
+        border-radius: 0px;
+        margin: 2rem 0; }
+      .section-form--box form label {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: #333; }
+  .section-form--text--header {
+    padding: 2.5rem 0;
+    display: block;
+    background-color: #ffb900;
+    width: 100%; }
+  .section-form--text p {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 3rem; }
+
+.row-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem; }
+  .row-wrapper :first-child {
+    margin-right: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row-wrapper :first-child {
+        margin: 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .row-wrapper {
+      flex-wrap: wrap;
+      margin: 0; } }
+
+.column-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 56.25em) {
+    .column-wrapper {
+      margin: 0; } }
+
+.column-wrapper-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 2rem; }
+  .column-wrapper-center label {
+    align-self: flex-start; }
+  .column-wrapper-center .subject {
+    width: 100%; }
+  .column-wrapper-center .how-to-help {
+    height: 150px;
+    width: 100%;
+    border: solid 1px #dddddd;
+    border-radius: 0px;
+    margin-top: 2rem; }
+  .column-wrapper-center :nth-child(3) {
+    margin-top: 2rem; }
+  .column-wrapper-center .submit-btn {
+    height: 50px;
+    margin-top: 2rem;
+    width: 25%;
+    border: none;
+    background-color: #ffb900;
+    color: #333; }
+    .column-wrapper-center .submit-btn:hover {
+      background-color: #333;
+      color: #fff; }
+    @media only screen and (max-width: 56.25em) {
+      .column-wrapper-center .submit-btn {
+        width: 60%;
+        font-size: 1rem;
+        font-weight: bold; } }
 
 .section-single--article {
   padding: 10rem 2rem; }
@@ -819,4 +916,33 @@ a {
         color: #ffb900; }
 
 .section-contact {
-  height: 100vh; }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .section-contact--box {
+    width: 30%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 56.25em) {
+      .section-contact--box {
+        width: 100%;
+        padding: 3rem 2rem;
+        box-shadow: none; } }
+  .section-contact .section-form--text--header {
+    background-color: white;
+    margin-top: 5rem; }
+    .section-contact .section-form--text--header::after {
+      content: "";
+      display: block;
+      width: 30rem;
+      background-color: #ffb900;
+      height: 1px;
+      margin: 1rem auto 0; }
+  .section-contact form input,
+  .section-contact form textarea {
+    background-color: #eee; }
