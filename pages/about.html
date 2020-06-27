@@ -17,7 +17,72 @@
 
     <title>Professional Construction</title>
   </head>
-
+  <nav class="navigation-desktop">
+    <div class="navigation-desktop--logo">
+      Logo
+    </div>
+    <div class="navigation-desktop--menu">
+      <ul>
+        <li><a class="menu--item" href="../index.html">Home</a></li>
+        <li><a class="menu--item" href="./about.html">About</a></li>
+        <li>
+          <a class="menu--item" href="./services.html">Services</a>
+        </li>
+        <li><a class="menu--item" href="#">Work</a></li>
+        <li>
+          <a class="menu--item" href="./articles.html">Articles</a>
+        </li>
+        <li>
+          <a class="btn btn--orange" href="./contact.html">Get Quote</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navigation-phone">
+    <div class="logo">
+      LOGO
+    </div>
+    <div class="logo-active">
+      LOGO ACTIVE
+    </div>
+    <div class="menu-icon">
+      <span class="menu-icon__line menu-icon__line-left"></span>
+      <span class="menu-icon__line"></span>
+      <span class="menu-icon__line menu-icon__line-right"></span>
+    </div>
+    <div class="navigation-phone__content">
+      <ul class="navigation-phone__list">
+        <li class="navigation-phone__list-item">
+          <a class="navigation-phone__list-item-a" href="/">Home</a>
+        </li>
+        <li class="navigation-phone__list-item">
+          <a class="navigation-phone__list-item-a" href="./about.html"
+            >About</a
+          >
+        </li>
+        <li class="navigation-phone__list-item">
+          <a class="navigation-phone__list-item-a" href="./services.html"
+            >Services</a
+          >
+        </li>
+        <li class="navigation-phone__list-item">
+          <a class="navigation-phone__list-item-a" href="./work.html"
+            >Work</a
+          >
+        </li>
+        <li class="navigation-phone__list-item">
+          <a class="navigation-phone__list-item-a" href="./articles.html"
+            >Articles</a
+          >
+        </li>
+        <li class="navigation-phone__list-item">
+          <a class="navigation-phone__list-item-a" href="./contact.html"
+            >Get Qoute</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
   <body>
     <main>
       <header class="header">
@@ -286,8 +351,10 @@
     <div class="arrow-top">
       <i class="lni lni-chevron-up"></i>
     </div>
-    <script type="module" src="../scripts/services.js"></script>
+    <script src="../index.js"></script>
     <script src="../scripts/arrowTop.js"></script>
+    <script src="../scripts/checkMenu.js"></script>
+    <script src="../scripts/navigation.js"></script>
     <script src="../scripts/map.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCarz6iVb3CmygHrENfJIS8kSoeYMClVvA&callback=initMap&libraries=&v=weekly"
