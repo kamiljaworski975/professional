@@ -12,9 +12,9 @@ function checkMenu() {
     } else if (x.indexOf('/services') > 0) {
         menuItem[2].classList.add("current-menu")
     } else if (x.indexOf('/about') > 0) {
-        return null
+        menuItem[1].classList.add("current-menu")
     } else if (x.indexOf('/work') > 0) {
-        return null
+        menuItem[3].classList.add("current-menu")
     } else if (x == "http://127.0.0.1:8080/" ) {
         menuItem[0].classList.add("current-menu")
     } else {
