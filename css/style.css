@@ -25,6 +25,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveInLeftReverse {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 0;
+    transform: translate(-10rem); } }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -497,7 +507,8 @@ a {
         width: 100%;
         border: solid 1px #dddddd;
         border-radius: 0px;
-        margin: 2rem 0; }
+        margin: 2rem 0;
+        padding: 2rem; }
       .section-form--box form label {
         text-transform: uppercase;
         font-size: 1.6rem;
@@ -529,10 +540,12 @@ a {
 .column-wrapper {
   width: 100%;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   margin-bottom: 1rem;
+  padding: 1.5rem 0;
   flex-wrap: wrap; }
   @media only screen and (max-width: 56.25em) {
     .column-wrapper {
@@ -561,6 +574,8 @@ a {
     margin-top: 2rem;
     width: 25%;
     border: none;
+    outline: none;
+    cursor: pointer;
     background-color: #ffb900;
     color: #333; }
     .column-wrapper-center .submit-btn:hover {
@@ -571,6 +586,30 @@ a {
         width: 60%;
         font-size: 1rem;
         font-weight: bold; } }
+
+.form-error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  color: red;
+  text-align: left;
+  display: none; }
+
+#form-con {
+  position: relative; }
+
+.form-succes {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  animation: moveInLeft 1s;
+  display: none; }
 
 .section-single--article {
   padding: 10rem 2rem; }

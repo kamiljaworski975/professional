@@ -25,6 +25,7 @@
             border: solid 1px rgb(221, 221, 221);
             border-radius: 0px;
             margin: 2rem 0;
+            padding: 2rem;
             }
     
             & label {
@@ -70,10 +71,12 @@
   .column-wrapper {
         width: 100%;
         display: flex;
+        position: relative;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
         margin-bottom: 1rem;
+        padding: 1.5rem 0;
         flex-wrap: wrap;
         @include respond(tab-port) {
         margin: 0;
@@ -106,6 +109,8 @@
             margin-top: 2rem;
             width: 25%;
             border:none;
+            outline: none;
+            cursor: pointer;
         
             background-color: $color-secondary-light;
             color: $color-grey-dark-3;
@@ -119,4 +124,30 @@
                 font-weight: bold;
             }
     }
+  }
+
+
+  .form-error {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 1.5rem;
+      padding: .5rem 0;
+      color: red;
+      text-align: left;
+      display: none;
+  }
+#form-con {
+    position: relative;
+}
+  .form-succes {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    animation: moveInLeft 1s;
+    display: none;
   }
