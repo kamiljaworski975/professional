@@ -1,99 +1,102 @@
 .section-about {
-    min-height: 170vh;
-    background-color: $color-grey-light-1;
-    &--box {
-        background-color: $color-secondary-light;
-        padding: 5rem 2rem 1rem;
-        margin: 0 auto;
-    }
+  // min-height: 170vh;
+  background-color: $color-grey-light-1;
+  padding: 0 0 5rem;
+  &--box {
+    background-color: $color-secondary-light;
+    padding: 5rem 2rem 1rem;
+    margin: 0 auto;
+  }
 }
 
+.section-stats {
+  background: linear-gradient(to bottom, rgb(247, 247, 247), rgba(0, 0, 0, 0));
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
 
-.section-stats{
-    min-height: 120vh;
+  &--clip {
+    height: 100%;
+    width: 100%;
+    padding: 10rem 0;
     background-image: linear-gradient(
         to right bottom,
-        rgba(0,0,0 , 0.6),
-        rgba(0,0,0, 0.6)),
-    url("../../img/renovation-tools.jpeg");
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../../img/renovation-tools.jpeg");
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    position: relative;
-    margin-top: -35rem;
-    width: 100%;
-    padding-top: 10rem;
     -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
     clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%);
+  }
+  & .row {
+    margin: 20rem 0 10rem;
+  }
 
-    
+
+  &--icon {
+    font-size: 10rem;
+    color: $color-secondary-light;
 
     @include respond(tab-port) {
-        background: red;
+      font-size: 6rem;
     }
+  }
 
-    &--icon {
-        font-size: 10rem;
-        color: $color-secondary-light;
-
-        @include respond(tab-port) {
-            font-size: 6rem;
-        }
+  &--count {
+    display: block;
+    font-size: 7rem;
+    color: $color-secondary-light;
+    margin-top: -2rem;
+    @include respond(tab-port) {
+      font-size: 5rem;
     }
-
-    &--count {
-        display: block;
-        font-size: 7rem;
-        color: $color-secondary-light;
-        margin-top: -2rem;
-        @include respond(tab-port) {
-            font-size: 5rem;
-        }
-    }
-    &--sub {
-        display: inline-block;
-        transform: translateY(.8rem);
-    }
+  }
+  &--sub {
+    display: inline-block;
+    transform: translateY(0.8rem);
+  }
 }
 
-
 .section-values {
-    padding: 7rem 0;
-    height: 150vh;
-    background-color: $color-grey-light-1;
-    & .icon-box {
-        height: 13.4rem;
-        width: 14.4rem;
-        transition: all .5s easy;
-       
-        &:hover {
-            transform: translateY(-1rem);
-        }
-        &--round {
-            font-size: 6rem;
-        }
+  padding: 7rem 0;
+  background-color: $color-grey-light-1;
+  & .icon-box {
+    height: 13.4rem;
+    width: 14.4rem;
+    transition: all 0.5s easy;
+
+    &:hover {
+      transform: translateY(-1rem);
     }
+    &--round {
+      font-size: 6rem;
+    }
+  }
 }
 
 .section-article {
-    padding: 10rem 0;
-    min-height: 100vh;
+  padding: 10rem 0;
+  min-height: 100vh;
 }
 
 .section-bottom {
-    // min-height: 60vh;
-    padding: 10rem 0;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(0,0,0 , 0.6),
-        rgba(0,0,0, 0.6)), 
-        url("../../img/section-bottom.jpeg");
-        background-position: center;
-        background-size: cover;
-        
-    & .col-1-of-3 span {
-        display: block;
-        color: $color-white;
-        font-size: 1.6rem;
-    }
+  // min-height: 60vh;
+  padding: 10rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../../img/section-bottom.jpeg");
+  background-position: center;
+  background-size: cover;
+
+  & .col-1-of-3 span {
+    display: block;
+    color: $color-white;
+    font-size: 1.6rem;
+  }
 }

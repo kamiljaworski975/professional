@@ -323,8 +323,7 @@ a {
     visibility: visible; }
 
 .section-work--reuseable {
-  min-height: 100vh;
-  padding: 10rem 0 0; }
+  padding: 10rem 0 5rem; }
   @media only screen and (max-width: 75em) {
     .section-work--reuseable {
       padding: 10 2rem 0; } }
@@ -726,6 +725,12 @@ a {
       .footer-bot div:last-child a:not(:last-child) {
         margin-right: 2rem; }
 
+.logo-footer {
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  transition: all 1s; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -1071,28 +1076,30 @@ body.nav-active .logo-active {
   visibility: visible; }
 
 .section-about {
-  min-height: 170vh;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  padding: 0 0 5rem; }
   .section-about--box {
     background-color: #ffb900;
     padding: 5rem 2rem 1rem;
     margin: 0 auto; }
 
 .section-stats {
-  min-height: 120vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/renovation-tools.jpeg");
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  background: linear-gradient(to bottom, #f7f7f7, rgba(0, 0, 0, 0));
   position: relative;
-  margin-top: -35rem;
   width: 100%;
-  padding-top: 10rem;
-  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
-  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%); }
-  @media only screen and (max-width: 56.25em) {
-    .section-stats {
-      background: red; } }
+  padding: 5rem 0; }
+  .section-stats--clip {
+    height: 100%;
+    width: 100%;
+    padding: 10rem 0;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/renovation-tools.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%); }
+  .section-stats .row {
+    margin: 20rem 0 10rem; }
   .section-stats--icon {
     font-size: 10rem;
     color: #ffb900; }
@@ -1113,12 +1120,11 @@ body.nav-active .logo-active {
 
 .section-values {
   padding: 7rem 0;
-  height: 150vh;
   background-color: #f7f7f7; }
   .section-values .icon-box {
     height: 13.4rem;
     width: 14.4rem;
-    transition: all .5s easy; }
+    transition: all 0.5s easy; }
     .section-values .icon-box:hover {
       transform: translateY(-1rem); }
     .section-values .icon-box--round {
