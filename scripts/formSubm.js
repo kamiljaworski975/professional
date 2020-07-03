@@ -1,5 +1,5 @@
 const info = document.getElementById("info");
-const subBtn = document.querySelector(".submit-btn");
+const subBtn = document.querySelector("#subBtn");
 const inputs = document.querySelectorAll("#form-con input");
 const formError = Array.from(document.querySelectorAll(".form-error"));
 const formSucces = document.querySelector(".form-succes");

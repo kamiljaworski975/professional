@@ -68,7 +68,7 @@
 }
 
 .header-article {
-    height: 50vh;
+    min-height: 50vh;
     background-color: $color-grey-dark-3;
     position: relative;
     &__text-box {
@@ -79,8 +79,15 @@
         text-align: center;
         width: 80%;
         padding: 0 2rem;
-        @include respond(tab-land) {
+        @include respond(tab-port) {
             width: 100%;
+            top: 50%;
+            .heading-primary {
+              margin: 0;  
+            }
         }
+    }
+    @include respond(tab-port) {
+        min-height: 45vh;
     }
 }

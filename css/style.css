@@ -665,7 +665,7 @@ a {
     padding: 2rem; }
 
 .header-article {
-  height: 50vh;
+  min-height: 50vh;
   background-color: #333;
   position: relative; }
   .header-article__text-box {
@@ -676,9 +676,15 @@ a {
     text-align: center;
     width: 80%;
     padding: 0 2rem; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 56.25em) {
       .header-article__text-box {
-        width: 100%; } }
+        width: 100%;
+        top: 50%; }
+        .header-article__text-box .heading-primary {
+          margin: 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .header-article {
+      min-height: 45vh; } }
 
 .footer {
   padding: 5rem 0 0;
