@@ -10,11 +10,18 @@
     align-items: center;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
     z-index: 1;
+    @include respond(tab-land) {
+        padding: 0 2rem;
+    }
     @include respond(tab-port) {
         display: none;
     }
     &--logo {
-        font-size: 4rem;
+        width: 160px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     } 
     &--menu {
         & ul {
@@ -42,6 +49,19 @@
             &:active {
                 color: $color-secondary-light;
             }
+        }
+    }
+}
+
+.logo-box {
+    width: 80%;
+    height: 80%;
+    & img {
+        object-fit: cover;
+        width: 130px;
+        height: 100px;
+        @include respond(tab-land) {
+            width: 100px;
         }
     }
 }

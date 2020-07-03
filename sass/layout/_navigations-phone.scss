@@ -1,20 +1,15 @@
-.logo,
 .logo-active {
-  height: 30px;
-  width: 30px;
+  height: 80px;
+  width: 80px;
   position: fixed;
   z-index: 2;
-  left: 50px;
-  top: 20px;
+  left: 10px;
+  top: 10px;
   cursor: pointer;
-  transition: all 2s;
+  transition: all 1s;
   font-size: 3rem;
-}
-.logo-active {
-  color: white;
-  width: 30rem;
-  height: 10rem;
   opacity: 0;
+  visibility: hidden;
 }
 
 .menu-icon {
@@ -22,14 +17,14 @@
   width: 30px;
   position: fixed;
   z-index: 2;
-  right: 50px;
-  top: 30px;
+  right: 20px;
+  top: 4rem;
   cursor: pointer;
   &__line {
     height: 2px;
     width: 30px;
     display: block;
-    background-color: rgb(255, 115, 0);
+    background-color: black;
     margin-bottom: 4px;
     -webkit-transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
     transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
@@ -37,7 +32,7 @@
     transition: transform 0.2s ease, background-color 0.5s ease,
       -webkit-transform 0.2s ease;
     &-left {
-      width: 1.5rem;
+      width: 15px;
     }
     &-right {
       width: 15px;
@@ -51,7 +46,7 @@
   z-index: 1;
   display: none;
   @include respond(tab-port) {
-      display: block;
+    display: block;
   }
   &::before,
   &::after {
@@ -84,19 +79,25 @@
     -webkit-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
     width: 100%;
-    text-align: center;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
     font-size: calc(2vw + 10px);
     font-weight: 200;
     cursor: pointer;
+    transition: all 0.4s;
   }
   &__list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     list-style: none;
+    @include respond(land-scape) {
+      flex-direction: row;
+    }
     &-item {
-      margin-bottom: 35px;
+      margin-bottom: 10px;
       position: relative;
       display: inline-block;
       -webkit-transition-delay: 0.8s;
@@ -109,20 +110,29 @@
       transition: opacity 0.2s ease, transform 0.3s ease;
       transition: opacity 0.2s ease, transform 0.3s ease,
         -webkit-transform 0.3s ease;
-      margin-right: 2.5rem;
+      &:not(:last-child) {
+        @include respond(land-scape) {
+          margin-right: 2rem;
+        }
+      }
       &-a {
         text-decoration: none;
         font-size: 4rem;
         font-weight: 700;
         color: $color-white;
         z-index: 99999;
+        @include respond(land-scape) {
+          font-size: 3rem;
+        }
       }
     }
   }
 }
-
+body.nav-active .navigation-phone__content {
+  visibility: visible;
+}
 body.nav-active .menu-icon__line {
-  background-color: #000;
+  background-color: white;
   -webkit-transform: translateX(0px) rotate(-45deg);
   transform: translateX(0px) rotate(-45deg);
 }
@@ -191,12 +201,7 @@ body.nav-active .navigation-phone__list-item:nth-child(6) {
   transition-delay: 1.1s;
 }
 
-body.nav-active .logo {
-  opacity: 0;
-}
-
 body.nav-active .logo-active {
   opacity: 1;
+  visibility: visible;
 }
-
-  
