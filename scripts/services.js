@@ -1,11 +1,13 @@
 const services = Array.from(document.querySelectorAll(".service"));
 import {markup, markup2, markup3, markup4, markup5} from "./services-categories.js";
+const desc = document.querySelector(".section-services--right")
 
 
 function selectServices() {
     services.forEach((el,i) => {
-        el.addEventListener("click", event => addEvent(event)) 
+        el.addEventListener("click", event => addEvent(event))
     })
+    desc.innerHTML = markup;
 }
 
 function addEvent(event) {
@@ -27,23 +29,23 @@ function addEvent(event) {
 
 function addServices(el) {
     const box = document.querySelector(".service-description");
-    const desc = document.querySelector(".section-services--right")
+   
 
     if (box) {
         desc.removeChild(box)
     }
 
     switch(el) {
-        case 'service-overview':
+        case 'bespoke-doors':
             desc.innerHTML = markup;
             break;
-        case 'service-1':
+        case 'interior':
             desc.innerHTML = markup2;
             break;
-        case 'service-2':
+        case 'external':
             desc.innerHTML = markup3;
             break;
-        case 'service-3':
+        case 'new-build':
             desc.innerHTML = markup4;
             break;
         case 'service-4':

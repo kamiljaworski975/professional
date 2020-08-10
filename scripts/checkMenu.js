@@ -22,4 +22,4 @@ function checkMenu() {
     }
 }
 
-checkMenu()
+checkMenu();
