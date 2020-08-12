@@ -117,36 +117,44 @@
 
         <div class="row">
           <div class="col-1-of-4 section-services--left">
-            <ul>
-              <li class="service active" id="bespoke-doors">
-                <h4 class="heading-quaternary">Bespoke Doors</h4>
-              </li>
-              <li class="service" id="interior">
+            <div class="service active" id="bespoke-doors">
+              <h4 class="heading-quaternary">Bespoke Doors</h4>
+            </div>
+            <div class="service-box">
+              <div class="service" id="interior">
                 <h4 class="heading-quaternary">Interior</h4>
-                <li class="service-inside" id="underfloor">Underfloor Heating</li>
-                <li class="service-inside"  id="bathroom">Bathroom</li>
-                <li class="service-inside"  id="projection-plaster">Projection Plaster</li>
-                <li class="service-inside"  id="dry-lining"> Dry Lining</li>
-                <li class="service-inside"  id="kitchen">Kitchen</li>
-                <li class="service-inside"  id="plumbing">Plumbing</li>
-                <li class="service-inside"  id="electric">Electric</li>
-                <li class="service-inside"  id="loft-converted">Loft Converted</li>
-                <li class="service-inside"  id="suspended-ceiling">Suspended Ceiling</li>
-              </li>
-              <li class="service" id="external">
+              </div>
+              <div id="inside-int">
+                <div class="service drop" id="underfloor">
+                  Underfloor Heating
+                </div>
+                <div class="service drop" id="bathroom-kitchen">
+                  Bathroom & Kitchen
+                </div>
+                <div class="service drop" id="other">Other</div>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="service" id="external">
                 <h4 class="heading-quaternary">External</h4>
-                <li class="service-inside"  id="extension">Extension</li>
-                <li class="service-inside"  id="external-rendering">External Rendering</li>
-                <li class="service-inside"  id="garage-converted">Garage Converted</li>
-              </li>
-              <li class="service" id="new-build">
-                <h4 class="heading-quaternary">New Build</h4>
-              </li>
-            </ul>
+              </div>
+              <div id="inside-ext">
+                <div class="service drop" id="extension">Extension</div>
+                <div class="service drop" id="external-rendering">
+                  External Rendering
+                </div>
+                <div class="service drop" id="garage-converted">
+                  Garage Converted
+                </div>
+              </div>
+            </div>
+
+            <div class="service" id="new-build">
+              <h4 class="heading-quaternary">New Build</h4>
+            </div>
           </div>
-          <div class="col-3-of-4 section-services--right">
-            
-          </div>
+
+          <div class="col-3-of-4 section-services--right"></div>
         </div>
       </section>
       <section class="section-form u-flex-column">
@@ -205,7 +213,13 @@
               <label for="info">How can we help?</label>
               <textarea class="how-to-help" name="info" id="info"></textarea>
 
-              <button id="subBtn" class="btn btn--orange u-margin-top-medium" type="submit">GET FREE QUOTE</button>
+              <button
+                id="subBtn"
+                class="btn btn--orange u-margin-top-medium"
+                type="submit"
+              >
+                GET FREE QUOTE
+              </button>
             </div>
             <div class="form-succes"></div>
           </form>

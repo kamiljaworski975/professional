@@ -15,7 +15,7 @@ Bathroom design and installation specialist, ///////////////////
 
 The bathroom is a special place in every home and it is important to us that it is aesthetically pleasing to you, functional and comfortable for all the family to use.
 
-If you’re planning a full bathroom re-fit or would like to add an en-suite into your home or perhaps you are looking for an easy access shower, Home Renovations London provide a comprehensive service from ideas to designs to installation and completion.
+If you’re planning a full bathroom re-fit or would like to add an en-suite into your home or perhaps you are looking for an easy access shower, We provide a comprehensive service from ideas to designs to installation and completion.
 
 We remove all the old fittings, tiles and flooring that are no longer required, and dispose of them for you, so that there is a clean and tidy environment in which to work.
 
@@ -85,7 +85,7 @@ There are several different kinds of loft conversion to consider.
 
 Roof extensions are the most straightforward, but depend on having a suitable roof.
 A dormer loft conversion is a loft extension to your roof, but doesn't normally take up the whole of the roof space. It also has the advantage of adding plenty of natural light.
-Mansard extensions are particularly popular within the areas of Central, North and West London that we cover, as they follow local conservation requirements in order to blend in with other properties. Unlike a dormer conversion, it doesn't add to the roof space, but rebuilds the whole side of the roof.
+Mansard extensions are particularly popular within the areas of Central, North and West London that. Unlike a dormer conversion, it doesn't add to the roof space, but rebuilds the whole side of the roof.
 Whichever you choose, the good news is that, with the exception of Mansard loft conversions, planning permission is almost never required (although we will always advise on this).
 
 Suspended ceiling,////////////////////
