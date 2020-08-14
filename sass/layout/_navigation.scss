@@ -1,6 +1,6 @@
 .navigation-desktop {
     width: 100%;
-    height: 12rem;
+    height: 10rem;
     position: fixed;
     top: 0;
     padding: 0 10rem;
@@ -58,17 +58,18 @@
     height: 80%;
     & img {
         object-fit: cover;
-        width: 130px;
-        height: 100px;
-        @include respond(tab-land) {
-            width: 100px;
-        }
+        width: 9rem;
+        height: auto;
+        // @include respond(tab-land) {
+        //     width: 9rem;
+        //     height: 100%;
+        // }
     }
 }
 
 .current-menu {
     color: $color-secondary-light !important;
-    &::after {
+    &::before {
         content: "";
         display: block;
         width: 2rem;
@@ -76,7 +77,7 @@
         background: $color-white;
         z-index: 0;
         position: absolute;
-        top: 360%;
+        top: 6.5rem;
         left: 50%;
         transform: translate(-50%, -50%);
         clip-path: polygon(50% 100%, 0 0, 100% 0);

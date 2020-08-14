@@ -6,7 +6,14 @@ import {
   markup4,
   markup5,
 } from "./services-categories.js";
-import { BathroomKitchen, Underfloor, Other } from "./services-categories/interior.js";
+import {
+  BathroomKitchen,
+  Underfloor,
+  Other,
+} from "./services-categories/interior.js";
+import { NewBuild } from "./services-categories/newBuild.js";
+import { ExternalRend, Garage } from "./services-categories/external.js";
+
 const desc = document.querySelector(".section-services--right");
 const insideInt = document.getElementById("inside-int");
 const insideExt = document.getElementById("inside-ext");
@@ -43,7 +50,6 @@ function addEvent(event) {
       });
       addServices(btn.id);
       btn.classList.add("active");
-      console.log("dziala", btn.id);
     }
   }
 }
@@ -60,10 +66,7 @@ function addServices(el) {
       desc.innerHTML = markup;
       break;
     case "new-build":
-      desc.innerHTML = markup4;
-      break;
-    case "service-4":
-      desc.innerHTML = markup5;
+      desc.innerHTML = NewBuild;
       break;
     case "bathroom-kitchen":
       desc.innerHTML = BathroomKitchen;
@@ -71,8 +74,17 @@ function addServices(el) {
     case "underfloor":
       desc.innerHTML = Underfloor;
       break;
-      case "other":
+    case "other":
       desc.innerHTML = Other;
+      break;
+    case "external-rendering":
+      desc.innerHTML = ExternalRend;
+      break;
+    case "extension":
+      desc.innerHTML = ExternalRend;
+      break;
+    case "garage-converted":
+      desc.innerHTML = Garage;
       break;
     default:
       return null;
@@ -80,10 +92,3 @@ function addServices(el) {
 }
 
 selectServices();
-
-// case 'interior':
-//             inside.forEach(el => el.style.display = 'block')
-//             break;
-//         case 'external':
-//             desc.innerHTML = markup3;
-//             break;

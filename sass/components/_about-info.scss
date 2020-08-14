@@ -5,9 +5,17 @@
     overflow: hidden;
     cursor: pointer;
     transition: all .2s;
+    height: 34rem;
+    @include respond(tab-land) {
+        height: 36rem;
+    }
+    @include respond(tab-port) {
+        height: auto;
+    }
     &-front {
         padding: 5rem 1.5rem;
         transition: all .6s linear;
+        height: 100%;
     }
     &-back {
         position: absolute;
@@ -20,6 +28,21 @@
         transition: all .6s linear;
         background: $color-secondary-light;
         color: $color-white;
+        & .btn--orange {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            @include respond(tab-port) {
+                bottom: 1rem;
+            }
+
+            @include respond(tab-land) {
+                font-size: 1.4rem;
+                bottom: 1rem;
+            }
+        }
     }
     &:hover{
         transform: translateY(-1rem);

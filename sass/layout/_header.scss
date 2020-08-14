@@ -1,52 +1,78 @@
 .header {
-    height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-    url("");
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    
+        rgba(black, 0.8),
+        rgba(white, 0.3)
+      ),
+      url("../../img/home/home-background.jpg");
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-            only screen and (min-width: 125em) {
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-primary-light, 0.8),
-            rgba($color-primary-dark, 0.8)),
-        url("");
-    }
- 
-    &__text-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        
-        @include respond(tab-land) {
-            width: 100%;
-        }
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(black, 0.8),
+          rgba(white, 0.3)
+        ),
+        url("../../img/home/home-background.jpg");
     }
 
-    & .btn,
-    & .btn:link,
-    & .btn:visited {
-        @include respond(phone) {
-            padding: 1rem 2rem;
-            display: block;
-            width: 50%;
-            margin: 0 auto;
-        }
-    }
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
 
-    & .btn--grey {
-        @include respond(phone) {
-            margin-right: auto !important;
-            margin-bottom: 2rem !important;
-         }
+  & .btn,
+  & .btn:link,
+  & .btn:visited {
+    @include respond(phone) {
+      padding: 1rem 2rem;
+      display: block;
+      width: 50%;
+      margin: 0 auto;
     }
+  }
+
+  & .btn--grey {
+    @include respond(phone) {
+      margin-right: auto !important;
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+.header-short {
+  min-height: 50vh;
+  background-color: $color-grey-dark-3;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &__text-box {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 80%;
+      padding: 0 2rem;
+      @include respond(tab-port) {
+          width: 100%;
+          top: 50%;
+          .heading-primary {
+            margin: 0;  
+          }
+      }
+  }
+  @include respond(tab-port) {
+      min-height: 45vh;
+  }
 }

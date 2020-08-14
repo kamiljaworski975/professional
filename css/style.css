@@ -276,13 +276,12 @@ a {
 
 .icon-box {
   position: relative;
-  height: 64px;
-  width: 74px;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   background-clip: padding-box;
   margin: 0 auto;
-  background-color: #333; }
+  background-color: #333;
+  transition: all 0.7s ease; }
   .icon-box--round {
     position: absolute;
     top: 50%;
@@ -291,16 +290,45 @@ a {
     font-size: 3rem;
     color: #ffb900; }
 
+.values--box__icon {
+  position: relative; }
+  .values--box__icon:hover .icon-box {
+    transform: scale(0.9); }
+  .values--box__icon:hover .icon-box--before {
+    transform: translateX(-50%) scale(1.3);
+    opacity: 0; }
+
+.icon-box--before {
+  webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  background-clip: padding-box;
+  position: absolute;
+  height: 13.4rem;
+  width: 14.4rem;
+  transition: all 1s ease;
+  background: radial-gradient(circle, rgba(9, 9, 121, 0) 50%, rgba(2, 0, 36, 0.5) 60%);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+
 .about--info {
   position: relative;
   background-color: #eee;
   box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
   overflow: hidden;
   cursor: pointer;
-  transition: all .2s; }
+  transition: all .2s;
+  height: 34rem; }
+  @media only screen and (max-width: 75em) {
+    .about--info {
+      height: 36rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .about--info {
+      height: auto; } }
   .about--info-front {
     padding: 5rem 1.5rem;
-    transition: all .6s linear; }
+    transition: all .6s linear;
+    height: 100%; }
   .about--info-back {
     position: absolute;
     padding: 5rem 1.5rem;
@@ -312,6 +340,19 @@ a {
     transition: all .6s linear;
     background: #ffb900;
     color: #fff; }
+    .about--info-back .btn--orange {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%; }
+      @media only screen and (max-width: 56.25em) {
+        .about--info-back .btn--orange {
+          bottom: 1rem; } }
+      @media only screen and (max-width: 75em) {
+        .about--info-back .btn--orange {
+          font-size: 1.4rem;
+          bottom: 1rem; } }
   .about--info:hover {
     transform: translateY(-1rem);
     box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.25); }
@@ -800,23 +841,21 @@ a {
       padding: 0 3rem; } }
 
 .header {
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("");
   background-size: cover;
-  background-position: top;
-  position: relative; }
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/home/home-background.jpg"); }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(""); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/home/home-background.jpg"); } }
   .header__text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
-    @media only screen and (max-width: 75em) {
-      .header__text-box {
-        width: 100%; } }
+    text-align: center;
+    width: 100%; }
   @media only screen and (max-width: 37.5em) {
     .header .btn,
     .header .btn:link,
@@ -830,9 +869,34 @@ a {
       margin-right: auto !important;
       margin-bottom: 2rem !important; } }
 
+.header-short {
+  min-height: 50vh;
+  background-color: #333;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header-short__text-box {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    padding: 0 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header-short__text-box {
+        width: 100%;
+        top: 50%; }
+        .header-short__text-box .heading-primary {
+          margin: 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .header-short {
+      min-height: 45vh; } }
+
 .navigation-desktop {
   width: 100%;
-  height: 12rem;
+  height: 10rem;
   position: fixed;
   top: 0;
   padding: 0 10rem;
@@ -876,15 +940,12 @@ a {
   height: 80%; }
   .logo-box img {
     object-fit: cover;
-    width: 130px;
-    height: 100px; }
-    @media only screen and (max-width: 75em) {
-      .logo-box img {
-        width: 100px; } }
+    width: 9rem;
+    height: auto; }
 
 .current-menu {
   color: #ffb900 !important; }
-  .current-menu::after {
+  .current-menu::before {
     content: "";
     display: block;
     width: 2rem;
@@ -892,7 +953,7 @@ a {
     background: #fff;
     z-index: 0;
     position: absolute;
-    top: 360%;
+    top: 6.5rem;
     left: 50%;
     transform: translate(-50%, -50%);
     clip-path: polygon(50% 100%, 0 0, 100% 0); }
@@ -1130,10 +1191,7 @@ body.nav-active .logo-active {
   background-color: #f7f7f7; }
   .section-values .icon-box {
     height: 13.4rem;
-    width: 14.4rem;
-    transition: all 0.5s easy; }
-    .section-values .icon-box:hover {
-      transform: translateY(-1rem); }
+    width: 14.4rem; }
     .section-values .icon-box--round {
       font-size: 6rem; }
 
