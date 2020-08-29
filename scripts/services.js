@@ -1,12 +1,5 @@
 const services = Array.from(document.querySelectorAll(".service"));
 import {
-  markup,
-  markup2,
-  markup3,
-  markup4,
-  markup5,
-} from "./services-categories.js";
-import {
   BathroomKitchen,
   Underfloor,
   Other,
@@ -26,7 +19,8 @@ function selectServices() {
       el.addEventListener("click", (event) => addEvent(event));
     }
   });
-  desc.innerHTML = markup;
+  desc.innerHTML = NewBuild;
+  services[0].classList.add('active')
 }
 
 function dropDown(event) {
@@ -62,9 +56,6 @@ function addServices(el) {
   }
 
   switch (el) {
-    case "bespoke-doors":
-      desc.innerHTML = markup;
-      break;
     case "new-build":
       desc.innerHTML = NewBuild;
       break;
