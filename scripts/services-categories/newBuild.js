@@ -16,9 +16,4 @@ export const NewBuild = ` <div class="service-description">
 
 
 
-<div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-</div>
-</div>`
+</div>`;

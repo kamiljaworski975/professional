@@ -8,14 +8,7 @@ export const ExternalRend = ` <div class="service-description">
 
 <p class="paragraph">Damp can also be caused by rainwater leaking in through cracks in the brickwork. The render will form a protective waterproof barrier on the external walls, repelling water and preventing water ingress in future.</p>
 
-
-<div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-</div>
-</div>`
-
+</div>`;
 
 export const Garage = ` <div class="service-description">
 <div class="u-margin-bottom-medium">
@@ -31,10 +24,35 @@ export const Garage = ` <div class="service-description">
 
 <p class="paragraph">If you are unsure about what you want to do with your garage, then call us today and we will provide you free advice about the possibilities for you.</p>
 
+</div>`;
+
+export const Extension = ` <div class="service-description">
+<div class="u-margin-bottom-medium">
+        <h2 class="heading-secondary">
+        Extension
+        </h2>
+</div>
+<p class="paragraph">Don’t move out, move outwards. If you have outgrown your home then extend. Today it’s far easier than ever before to build the stylish kitchen extension, fully equipped home gym, orangery relaxation room or open-plan entertaining space for family meals and parties with friends without limits. Combine this with a refurbishment of the rest of your home and you could live somewhere completely new without having to move..</p>
+
 
 <div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
+    <div class="img-container">
+            <a
+    href="../img/services/extension/extension.jpg"
+    data-lightbox="extension"
+    ><img
+      src="../img/services/extension/extension.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+            <a
+    href="../img/services/extension/extension2.jpg"
+    data-lightbox="extension"
+    ><img
+      src="../img/services/extension/extension2.jpg"
+      alt=""
+  /></a>
+    </div>
 </div>
-</div>`
+</div>`;

@@ -5,7 +5,11 @@ import {
   Other,
 } from "./services-categories/interior.js";
 import { NewBuild } from "./services-categories/newBuild.js";
-import { ExternalRend, Garage } from "./services-categories/external.js";
+import {
+  ExternalRend,
+  Garage,
+  Extension,
+} from "./services-categories/external.js";
 
 const desc = document.querySelector(".section-services--right");
 const insideInt = document.getElementById("inside-int");
@@ -20,7 +24,7 @@ function selectServices() {
     }
   });
   desc.innerHTML = NewBuild;
-  services[0].classList.add('active')
+  services[0].classList.add("active");
 }
 
 function dropDown(event) {
@@ -72,7 +76,7 @@ function addServices(el) {
       desc.innerHTML = ExternalRend;
       break;
     case "extension":
-      desc.innerHTML = ExternalRend;
+      desc.innerHTML = Extension;
       break;
     case "garage-converted":
       desc.innerHTML = Garage;

@@ -14,9 +14,33 @@ Bathrooms
 <p class="paragraph">We remove all the old fittings, tiles and flooring that are no longer required, and dispose of them for you, so that there is a clean and tidy environment in which to work.</p>
 
 <div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
+    <div class="img-container">
+    <a
+    href="../img/services/bath/bathroom-2.jpg"
+    data-lightbox="bath"
+    ><img
+      src="../img/services/bath/bathroom-2.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+    <a
+    href="../img/services/bath/bathroom4.jpg"
+    data-lightbox="bath"
+    ><img
+      src="../img/services/bath/bathroom4.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+    <a
+    href="../img/services/bath/bath-4.jpg"
+    data-lightbox="bath"
+    ><img
+      src="../img/services/bath/bath-4.jpg"
+      alt=""
+  /></a>
+    </div>
 </div>
 
 <h3 class="heading-tertiary u-margin-bottom-small">
@@ -31,9 +55,33 @@ Kitchens
 If you are unsure about what you want to do with your kitchen, then call us today and we will provide you free advice about the possibilities for your kitchen.</p>
 
 <div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
+    <div class="img-container">
+          <a
+    href="../img/services/kitchens/kitchen-1.jpg"
+    data-lightbox="kitchen"
+    ><img
+      src="../img/services/kitchens/kitchen-1.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+          <a
+    href="../img/services/kitchens/kitchen-2.jpg"
+    data-lightbox="kitchen"
+    ><img
+      src="../img/services/kitchens/kitchen-2.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+          <a
+    href="../img/services/kitchens/kitchen-3.jpg"
+    data-lightbox="kitchen"
+    ><img
+      src="../img/services/kitchens/kitchen-3.jpg"
+      alt=""
+  /></a>
+    </div>
 </div>
 </div>`;
 
@@ -52,9 +100,33 @@ Projection Plaster
 </div>
 
 <div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
+    <div class="img-container">
+          <a
+    href="../img/services/plaster/plaster.jpg"
+    data-lightbox="plaster"
+    ><img
+      src="../img/services/plaster/plaster.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+          <a
+    href="../img/services/plaster/plaster2.jpg"
+    data-lightbox="plaster"
+    ><img
+      src="../img/services/plaster/plaster2.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+          <a
+    href="../img/services/plaster/plaster3.jpg"
+    data-lightbox="plaster"
+    ><img
+      src="../img/services/plaster/plaster3.jpg"
+      alt=""
+  /></a>
+    </div>
 </div>
 
 <h3 class="heading-tertiary u-margin-bottom-small">
@@ -84,41 +156,24 @@ Mansard extensions doesn't add to the roof space, but rebuilds the whole side of
 Whichever you choose, the good news is that, with the exception of Mansard loft conversions, planning permission is almost never required (although we will always advise on this).</p>
 
 <div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-</div>
-
-<h3 class="heading-tertiary u-margin-bottom-small">
-Plumbing
-</h3>
-
-
-<div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-</div>
-
-<h3 class="heading-tertiary u-margin-bottom-small">
-Electric
-</h3>
-
-
-<div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-</div>
-
-<h3 class="heading-tertiary u-margin-bottom-small">
-Suspended ceiling
-</h3>
-
-<div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
+    <div class="img-container">
+            <a
+    href="../img/services/loft/dach.jpg"
+    data-lightbox="dach"
+    ><img
+      src="../img/services/loft/dach.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+            <a
+    href="../img/services/loft/dach2.jpg"
+    data-lightbox="dach"
+    ><img
+      src="../img/services/loft/dach2.jpg"
+      alt=""
+  /></a>
+    </div>
 </div>
 
 </div>`;
@@ -142,8 +197,30 @@ export const Underfloor = ` <div class="service-description">
 
 
 <div class="service-description--img u-margin-bottom-medium">
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
-    <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
+    <div class="img-container">
+    <a
+    href="../img/services/underfloor-heating/115926980_991485334631253_5237687739276541739_n.jpg"
+    data-lightbox="underfloor"
+    ><img
+      src="../img/services/underfloor-heating/115926980_991485334631253_5237687739276541739_n.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container">
+    <a
+    href="../img/services/underfloor-heating/116054320_299546868128089_3724678331291260133_n.jpg"
+    data-lightbox="underfloor"
+    ><img
+      src="../img/services/underfloor-heating/116054320_299546868128089_3724678331291260133_n.jpg"
+      alt=""
+  /></a>
+    </div>
+    <div class="img-container"><a
+    href="../img/services/underfloor-heating/116801504_3494764727209795_976540407128467274_n.jpg"
+    data-lightbox="underfloor"
+    ><img
+      src="../img/services/underfloor-heating/116801504_3494764727209795_976540407128467274_n.jpg"
+      alt=""
+  /></a></div>
 </div>
 </div>`;
