@@ -891,6 +891,12 @@ a {
     .header-work {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/work/house-bradford/116669305_1039947219754577_3392283417966638742_n.jpg"); } }
 
+.header-contact {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/services/bath/bathroom4.jpg"); }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header-contact {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/services/bath/bathroom4.jpg"); } }
+
 .navigation-desktop {
   width: 100%;
   height: 10rem;

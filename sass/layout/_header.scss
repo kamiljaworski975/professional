@@ -111,3 +111,23 @@
       url("../../img/work/house-bradford/116669305_1039947219754577_3392283417966638742_n.jpg");
   }
 }
+
+.header-contact {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0.8),
+      rgba(white, 0.3)
+    ),
+    url("../../img/services/bath/bathroom4.jpg");
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0.8),
+        rgba(white, 0.3)
+      ),
+      url("../../img/services/bath/bathroom4.jpg");
+  }
+}
