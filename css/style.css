@@ -770,10 +770,6 @@ a {
       transition: all 0.5s; }
       .footer-bot div a:hover {
         color: #fff; }
-    .footer-bot div:last-child a {
-      font-size: 1.7rem; }
-      .footer-bot div:last-child a:not(:last-child) {
-        margin-right: 2rem; }
 
 #map {
   background: none !important; }
@@ -871,34 +867,34 @@ a {
       margin-bottom: 2rem !important; } }
 
 .header-home {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/home/home-background.jpg"); }
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/home/home-background.jpg"); }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header-home {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/home/home-background.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/home/home-background.jpg"); } }
 
 .header-about {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/work/house-bradford/116343302_1209995222686217_8003269051440409215_n.jpg"); }
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/work/house-bradford/116343302_1209995222686217_8003269051440409215_n.jpg"); }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header-about {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/work/house-bradford/116343302_1209995222686217_8003269051440409215_n.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/work/house-bradford/116343302_1209995222686217_8003269051440409215_n.jpg"); } }
 
 .header-services {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/work/house-bradford/115805181_1193710904317228_3258384022386742752_n.jpg"); }
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/work/house-bradford/115805181_1193710904317228_3258384022386742752_n.jpg"); }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header-services {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/work/house-bradford/115805181_1193710904317228_3258384022386742752_n.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/work/house-bradford/115805181_1193710904317228_3258384022386742752_n.jpg"); } }
 
 .header-work {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/work/house-bradford/116669305_1039947219754577_3392283417966638742_n.jpg"); }
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/work/house-bradford/116669305_1039947219754577_3392283417966638742_n.jpg"); }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header-work {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/work/house-bradford/116669305_1039947219754577_3392283417966638742_n.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/work/house-bradford/116669305_1039947219754577_3392283417966638742_n.jpg"); } }
 
 .header-contact {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/services/bath/bathroom4.jpg"); }
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/services/bath/bathroom4.jpg"); }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header-contact {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/services/bath/bathroom4.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/services/bath/bathroom4.jpg"); } }
 
 .navigation-desktop {
   width: 100%;

@@ -50,14 +50,6 @@
         color: $color-white;
       }
     }
-    & div:last-child {
-      & a {
-        font-size: 1.7rem;
-        &:not(:last-child) {
-          margin-right: 2rem;
-        }
-      }
-    }
   }
 }
 
