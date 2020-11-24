@@ -39,16 +39,16 @@
       height: auto;
       width: 100%;
       display: flex;
-      
+
       @include respond(tab-port) {
         flex-direction: column;
       }
 
-      & .img-container{
+      & .img-container {
         width: 33%;
         height: 100%;
         padding: 1rem;
-        transition: all .4s;
+        transition: all 0.4s;
         cursor: pointer;
         &:hover {
           transform: scale(1.1);

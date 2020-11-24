@@ -1292,7 +1292,7 @@ body.nav-active .logo-active {
       width: 33%;
       height: 100%;
       padding: 1rem;
-      transition: all .4s;
+      transition: all 0.4s;
       cursor: pointer; }
       .section-services--right .service-description--img .img-container:hover {
         transform: scale(1.1); }

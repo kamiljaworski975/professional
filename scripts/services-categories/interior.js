@@ -35,8 +35,7 @@ If you are unsure about what you want to do with your kitchen, then call us toda
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
 </div>
-</div>`
-
+</div>`;
 
 export const Other = ` <div class="service-description">
 <div class="u-margin-bottom-medium">
@@ -94,7 +93,6 @@ Whichever you choose, the good news is that, with the exception of Mansard loft 
 Plumbing
 </h3>
 
-<p class="paragraph">If your home has sufficient loft space, then a conversion is the most cost-effective way to add an extra room or rooms to your home, and to increase your property value at the same time.</p>
 
 <div class="service-description--img u-margin-bottom-medium">
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
@@ -106,7 +104,6 @@ Plumbing
 Electric
 </h3>
 
-<p class="paragraph">If your home has sufficient loft space, then a conversion is the most cost-effective way to add an extra room or rooms to your home, and to increase your property value at the same time.</p>
 
 <div class="service-description--img u-margin-bottom-medium">
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
@@ -118,17 +115,13 @@ Electric
 Suspended ceiling
 </h3>
 
-<p class="paragraph">If your home has sufficient loft space, then a conversion is the most cost-effective way to add an extra room or rooms to your home, and to increase your property value at the same time.</p>
-
 <div class="service-description--img u-margin-bottom-medium">
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
 </div>
 
-</div>`
-
-
+</div>`;
 
 export const Underfloor = ` <div class="service-description">
 <div class="u-margin-bottom-medium">
@@ -153,4 +146,4 @@ export const Underfloor = ` <div class="service-description">
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
     <div class="img-container"><img alt="add" src="../img/renovation-tools.jpeg"></div>
 </div>
-</div>`
+</div>`;

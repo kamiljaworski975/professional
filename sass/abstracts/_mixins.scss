@@ -31,6 +31,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
@@ -66,10 +67,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 @mixin noselect {
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none; 
-  -khtml-user-select: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none; 
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
