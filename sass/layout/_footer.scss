@@ -1,69 +1,73 @@
 .footer {
-    padding: 5rem 0 0;
-    background-color: $color-footer;
-    border-top: 12px solid $color-grey-dark-3;
-    position: relative;
-    & h3 {
-        color: $color-secondary-light;
+  padding: 5rem 0 0;
+  background-color: $color-footer;
+  border-top: 12px solid $color-grey-dark-3;
+  position: relative;
+  & h3 {
+    color: $color-secondary-light;
+  }
+  &-list {
+    list-style: none;
+    & li {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      & i {
+        margin-right: 1rem;
+      }
+      &:first-child span:not(:nth-child(2)) {
+        display: block;
+        // color: blue;
+        margin-left: 2.7rem;
+      }
     }
-    &-list{
-        list-style: none;
-        & li {
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-            & i {
-                margin-right: 1rem;
-            }
-            &:first-child span:not(:nth-child(2)) {
-                display: block;
-                // color: blue;
-                margin-left: 2.7rem;
-            }
-        }
-    }
-    &-bot {
-        width: 100%;
-        min-height: 10vh;
-        background-color: $color-footer-dark;
-        display: flex;
-        padding: 1rem 7rem;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1.4rem;
-        font-weight: 300;
+  }
+  &-bot {
+    width: 100%;
+    min-height: 10vh;
+    background-color: $color-footer-dark;
+    display: flex;
+    padding: 1rem 7rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 300;
 
-        @include respond(phone) {
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        & div:first-child {
-            @include respond(phone) {
-                margin-bottom: 1rem;
-            }
-        }
-        & div a {
-            text-decoration: none;
-            color: inherit;
-            transition: all .5s;
-            &:hover {
-                color: $color-white;
-            }
-        }
-        & div:last-child {
-            & a {
-                font-size: 1.7rem;
-                &:not(:last-child) {
-                    margin-right: 2rem;
-                }
-            } 
-        }
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
     }
+
+    & div:first-child {
+      @include respond(phone) {
+        margin-bottom: 1rem;
+      }
+    }
+    & div a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.5s;
+      &:hover {
+        color: $color-white;
+      }
+    }
+    & div:last-child {
+      & a {
+        font-size: 1.7rem;
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+#map {
+  background: none !important;
 }
 
 .logo-footer {
-    height: 150px;
-    width: 150px;
-    cursor: pointer;
-    transition: all 1s;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  transition: all 1s;
 }

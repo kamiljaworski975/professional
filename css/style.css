@@ -767,13 +767,16 @@ a {
     .footer-bot div a {
       text-decoration: none;
       color: inherit;
-      transition: all .5s; }
+      transition: all 0.5s; }
       .footer-bot div a:hover {
         color: #fff; }
     .footer-bot div:last-child a {
       font-size: 1.7rem; }
       .footer-bot div:last-child a:not(:last-child) {
         margin-right: 2rem; }
+
+#map {
+  background: none !important; }
 
 .logo-footer {
   height: 150px;
