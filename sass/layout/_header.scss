@@ -3,23 +3,6 @@
   background-position: center;
   position: relative;
   height: 100vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(black, 0.8),
-        rgba(white, 0.3)
-      ),
-      url("../../img/home/home-background.jpg");
-
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-      only screen and (min-width: 125em) {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(black, 0.8),
-          rgba(white, 0.3)
-        ),
-        url("../../img/home/home-background.jpg");
-    }
 
   &__text-box {
     position: absolute;
@@ -49,30 +32,82 @@
   }
 }
 
-.header-short {
-  min-height: 50vh;
-  background-color: $color-grey-dark-3;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  &__text-box {
-      position: absolute;
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      width: 80%;
-      padding: 0 2rem;
-      @include respond(tab-port) {
-          width: 100%;
-          top: 50%;
-          .heading-primary {
-            margin: 0;  
-          }
-      }
+.header-home {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0.8),
+      rgba(white, 0.3)
+    ),
+    url("../../img/home/home-background.jpg");
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0.8),
+        rgba(white, 0.3)
+      ),
+      url("../../img/home/home-background.jpg");
   }
-  @include respond(tab-port) {
-      min-height: 45vh;
+}
+
+.header-about {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0.8),
+      rgba(white, 0.3)
+    ),
+    url("../../img/work/house-bradford/116343302_1209995222686217_8003269051440409215_n.jpg");
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0.8),
+        rgba(white, 0.3)
+      ),
+      url("../../img/work/house-bradford/116343302_1209995222686217_8003269051440409215_n.jpg");
+  }
+}
+
+.header-services {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0.8),
+      rgba(white, 0.3)
+    ),
+    url("../../img/work/house-bradford/115805181_1193710904317228_3258384022386742752_n.jpg");
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0.8),
+        rgba(white, 0.3)
+      ),
+      url("../../img/work/house-bradford/115805181_1193710904317228_3258384022386742752_n.jpg");
+  }
+}
+
+.header-work {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0.8),
+      rgba(white, 0.3)
+    ),
+    url("../../img/work/house-bradford/116669305_1039947219754577_3392283417966638742_n.jpg");
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0.8),
+        rgba(white, 0.3)
+      ),
+      url("../../img/work/house-bradford/116669305_1039947219754577_3392283417966638742_n.jpg");
   }
 }
