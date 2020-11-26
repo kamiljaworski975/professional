@@ -872,7 +872,7 @@ a {
     color: #333;
     text-transform: uppercase;
     font-weight: 300;
-    transition: all .4s;
+    transition: all 0.4s;
     position: relative;
     outline: none; }
   .navigation-desktop--menu .menu--item:hover, .navigation-desktop--menu .menu--item:active {
@@ -926,7 +926,7 @@ a {
     height: 2px;
     width: 30px;
     display: block;
-    background-color: black;
+    background-color: #ff7730;
     margin-bottom: 4px;
     -webkit-transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
     transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
